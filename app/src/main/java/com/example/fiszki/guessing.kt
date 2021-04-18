@@ -2,11 +2,9 @@ package com.example.fiszki
 
 import android.content.Context
 import android.content.DialogInterface
-import android.content.Intent
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.util.Log
 import android.view.KeyEvent
 import android.view.View
 import android.view.WindowManager
@@ -15,11 +13,8 @@ import android.widget.*
 import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.constraintlayout.widget.ConstraintLayout
-import androidx.core.content.res.ResourcesCompat
-import com.google.android.gms.common.util.Hex
 import com.google.android.material.textfield.TextInputEditText
 import com.google.firebase.firestore.FirebaseFirestore
-import com.google.firebase.firestore.FirebaseFirestoreException
 
 class guessing : AppCompatActivity() {
 
@@ -44,12 +39,7 @@ class guessing : AppCompatActivity() {
         setContentView(R.layout.activity_guessing)
         findViewById<TextView>(R.id.score).text = "0/0"
         findViewById<TextView>(R.id.scorepercentage).text = "0%"
-        try {
-            drawingQuestions()
-        }
-        catch (e: Exception){
-            Log.e("mylog", "Błąd: " + e.message, e)
-        }
+        drawingQuestions()
         val editxt = findViewById<TextInputEditText>(R.id.userInpt)
         editxt.setOnClickListener {
             editxt.setOnKeyListener(View.OnKeyListener{_, keyCode, event ->
@@ -86,11 +76,6 @@ class guessing : AppCompatActivity() {
         }
         ADbuilder.setPositiveButton("Nie", { _: DialogInterface, _: Int -> })
         ADbuilder.show()
-    }
-
-    override fun onPause() {
-        Log.d("OnPause","Pauza")
-        super.onPause()
     }
 
     fun main_fun(x :Int) {
