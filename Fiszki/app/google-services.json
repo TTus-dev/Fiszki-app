@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "474963060289",
+    "firebase_url": "https://fiszki-6713a-default-rtdb.europe-west1.firebasedatabase.app",
+    "project_id": "fiszki-6713a",
+    "storage_bucket": "fiszki-6713a.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:474963060289:android:ed55274699e92cdc12c8c0",
+        "android_client_info": {
+          "package_name": "com.example.fiszki"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "474963060289-bbivdl89q4cnu9vuu3rr30e1t3uc8um5.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyChvjEwVyLFnQ8f5tBJGJIlFmoTmZYKECE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "474963060289-bbivdl89q4cnu9vuu3rr30e1t3uc8um5.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
